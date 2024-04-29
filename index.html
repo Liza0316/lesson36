@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="first.js"></script>
+    <script defer src="constants.js"></script>
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer-container">
+        <div class="timer">
+          <div id="time-display">5:00</div>
+          <div id="progress-bar"></div>
+        </div>
+        <button id="time-button" class="button">Set the time</button>
+        <button id="start-button" class="button">Start</button>
+        <button id="reset-button" class="button">Reset</button>
+        <button id="pause-button" class="button red-button">Pause</button>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <input type="number" id="minutes" min="1" max="60" placeholder="Minutes" class="input">
+          <input type="number" id="seconds" min="0" max="59" placeholder="Seconds" class="input">          
+          <button id="set-time" class="button">Set the time</button>
+        </div>
+      </div>
+</body>
+</html>
